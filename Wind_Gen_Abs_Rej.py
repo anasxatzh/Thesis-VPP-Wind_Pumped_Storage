@@ -367,47 +367,7 @@ for i in range(4015,5840,24): # 15/06-->01/09
     conv_list[i+6:i+8] = conv_production[1]
     conv_list[i+8:i+17] = conv_production[6]
     conv_list[i+17:i+24] = conv_production[8]
-# print(conv_list[4015:4039])
-# print(conv_production)
 
-for i in range(5840,8030,24): # 01/09-->01/12
-    # 4015-->4039-->4063-->...-->5839
-    conv_list[i:i+2] = conv_production[0]
-    conv_list[i+2:i+5] = conv_production[4]
-    conv_list[i+5:i+17] = conv_production[0]
-    conv_list[i+17:i+24] = conv_production[5]
-
-
-for i in range(2190,4015,24): # 01/04-->15/06
-    # 4015-->4039-->4063-->...-->5839
-    conv_list[i:i+2] = conv_production[0]
-    conv_list[i+2:i+5] = conv_production[4]
-    conv_list[i+5:i+17] = conv_production[0]
-    conv_list[i+17:i+24] = conv_production[5]
-
-for i in range(8030,8760,24): # 01/12-->01/01
-    # 4015-->4039-->4063-->...-->5839
-    conv_list[i:i+5] = conv_production[1]
-    conv_list[i+5:i+8] = conv_production[5]
-    conv_list[i+8:i+24] = conv_production[6]
-for i in range(0,24,24): # 01/1-->02/01
-    # 4015-->4039-->4063-->...-->5839
-    conv_list[i:i+5] = conv_production[1]
-    conv_list[i+5:i+8] = conv_production[5]
-    conv_list[i+8:i+24] = conv_production[6]
-
-for i in range(24,1095,24): # 02/01-->15/02
-    # 4015-->4039-->4063-->...-->5839
-    conv_list[i:i+5] = conv_production[2]
-    conv_list[i+5:i+16] = conv_production[7]
-    conv_list[i+16:i+24] = conv_production[9]
-
-for i in range(1095,2190,24): # 01/04-->15/06
-    # 4015-->4039-->4063-->...-->5839
-    conv_list[i:i+5] = conv_production[1]
-    conv_list[i+5:i+12] = conv_production[5]
-    conv_list[i+12:i+16] = conv_production[1]
-    conv_list[i+16:i+24] = conv_production[7]
 
 conv_list = conv_list.tolist()
 
